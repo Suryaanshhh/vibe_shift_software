@@ -9,7 +9,7 @@ export default defineConfig({
   // Build optimizations
   build: {
     // Enable minification
-    minify: 'terser',
+  
     
     // Optimize chunk splitting
     rollupOptions: {
