@@ -14,11 +14,6 @@ const TaglineSection = () => {
             <p>Build Faster</p>
           </div>
         </h1>
-        <div className="sub-tagline-container">
-          <span className="transform-icon">◆</span>
-          <p className="sub-tagline">That Transform Ideas Into Reality</p>
-          <span className="transform-icon">◆</span>
-        </div>
       </div>
     </section>
   );

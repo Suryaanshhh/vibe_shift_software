@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const SEO = ({ 
+const SEO = ({
   title = "VibeShift Software - Transform Ideas Into Reality",
   description = "Professional software development, web applications, mobile apps, AI/ML solutions, and data analytics. Building digital experiences that transform ideas into reality.",
   keywords = "software development, web development, mobile apps, AI, machine learning, data analytics, UI/UX design, React, Node.js, Python, custom software",
@@ -16,7 +16,7 @@ const SEO = ({
     const updateMetaTag = (name, content, property = false) => {
       const selector = property ? `meta[property="${name}"]` : `meta[name="${name}"]`;
       let element = document.querySelector(selector);
-      
+
       if (!element) {
         element = document.createElement('meta');
         if (property) {
@@ -26,7 +26,7 @@ const SEO = ({
         }
         document.head.appendChild(element);
       }
-      
+
       element.setAttribute('content', content);
     };
 

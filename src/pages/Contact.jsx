@@ -35,13 +35,10 @@ const Contact = () => {
                   Send us an email and we'll get back to you within 24 hours
                 </p>
                 <div className="bg-gray-800 rounded-lg p-4 border border-gray-600">
-                  <p className="text-white font-mono text-lg">
+                  <p className="text-white font-mono text-sm sm:text-lg break-all">
                     vibeshiftsoftware@gmail.com
-
                   </p>
-                  <p className="text-gray-400 text-sm mt-2">
-                    Click to copy email address
-                  </p>
+                 
                 </div>
               </div>
 
