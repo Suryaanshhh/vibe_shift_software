@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.dotted-bg {
+  background-color: white;
+  background-image: radial-gradient(circle, black 1px, transparent 1px);
+  background-size: 20px 20px;
+}

@@ -1,0 +1,52 @@
+.tech-stripe {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem 0;
+  background: #000;
+  overflow: hidden;
+}
+
+.tech-stripe-content {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tech-loop {
+  width: 100%;
+}
+
+.tech-item {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Override LogoLoop fade colors for black background */
+.tech-stripe .tech-loop {
+  --logoloop-fadeColor: #000;
+}
+
+@media (max-width: 768px) {
+  .tech-stripe {
+    padding: 1rem 0;
+  }
+  
+  .tech-item {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

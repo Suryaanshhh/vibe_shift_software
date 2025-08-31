@@ -1,0 +1,183 @@
+.tagline-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.tagline-content {
+  text-align: center;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-tagline {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 3rem 0;
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tagline-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  min-height: 4rem;
+}
+
+.tagline-row p {
+  margin: 0;
+  line-height: 1;
+  font-size: inherit;
+}
+
+.tagline-icon {
+  font-size: 3rem;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.shift-icon {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.build-icon {
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.sub-tagline-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+  margin-left: 50px
+  
+}
+
+.sub-tagline {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.transform-icon {
+  font-size: 1.2rem;
+  color: #666;
+  opacity: 0.6;
+  animation: sparkle 2.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-tagline {
+    font-size: 2.5rem;
+    gap: 0.8rem;
+  }
+  
+  .tagline-icon {
+    font-size: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .tagline-row {
+    gap: 1rem;
+    min-height: 3rem;
+  }
+  
+  .sub-tagline {
+    font-size: 1.2rem;
+  }
+  
+  .transform-icon {
+    font-size: 1rem;
+  }
+  
+  .sub-tagline-container {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-tagline {
+    font-size: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tagline-icon {
+    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .tagline-row {
+    gap: 0.8rem;
+    min-height: 2.5rem;
+  }
+  
+  .sub-tagline {
+    font-size: 1rem;
+  }
+  
+  .sub-tagline-container {
+    gap: 0.8rem;
+    margin-top: 0;
+  }
+  
+  .transform-icon {
+    font-size: 0.8rem;
+  }
+}
