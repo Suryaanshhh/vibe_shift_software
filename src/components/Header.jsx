@@ -1,6 +1,7 @@
 import React from 'react';
 import PillNav from './PillNav';
 import logo from '../assets/dummylogo.png';
+import { href } from 'react-router-dom';
 
 const Header = () => {
 
@@ -14,7 +15,9 @@ const Header = () => {
         items={[
           { label: 'Home', href: '/' },
           { label: 'Services', href: '/services' },
-          { label: 'Contact', href: '/contact' }
+          { label: 'Contact', href: '/contact' },
+          {label:'Story', href : '/successStories'},
+          {label:'Who Are We', href:'/whoarewe'}
         ]}
         activeHref={window.location.pathname}
         className="custom-nav"

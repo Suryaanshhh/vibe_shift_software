@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
+import ProcessSection from '../components/ProcessSection';
 
 const Contact = () => {
   return (
@@ -70,6 +71,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+          <ProcessSection/>
           <Footer />
         </div>
       </div>

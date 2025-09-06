@@ -28,7 +28,7 @@ export const measurePerformance = () => {
       entryTypes: ["navigation", "paint", "largest-contentful-paint"],
     });
 
-    // Measure First Input Delay (FID)
+    
     const fidObserver = new PerformanceObserver((list) => {
       for (const entry of list.getEntries()) {
         console.log("FID:", entry.processingStart - entry.startTime);

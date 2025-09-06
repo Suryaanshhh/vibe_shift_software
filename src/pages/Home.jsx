@@ -5,7 +5,10 @@ import TechStripe from '../components/TechStripe';
 import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
-
+import ProcessSection from '../components/ProcessSection';
+import BannerSection from '../components/Banner';
+import bannerLogo from '../assets/imageBanner.png'
+import WorkCarousel from '../components/WorkCarousel';
 const Home = () => {
   return (
     <>
@@ -19,10 +22,18 @@ const Home = () => {
         <div>
           <Header />
           <div className="space-y-0 -space-y-8">
-            <TaglineSection />
+          {/* <BannerSection 
+              imageSrc={bannerLogo}
+              alt="VibeShift Software Brand Banner"
+              height="h-72 md:h-96 lg:h-[500px]"
+              overlay={false}
+            /> */}
+            <TaglineSection/>
             <TechStripe />
-            <HeroSection />
+            {/* <HeroSection /> */}
+            <WorkCarousel/>
           </div>
+          <ProcessSection/>
           <Footer />
         </div>
       </div>
